@@ -21,7 +21,7 @@ namespace SearchAlgorithms1.Tests
             var js = new JumpSearch();
             var bs = new BinarySearch();
             int[] arr = { 10, 20, 30, 40, 50 };
-            Assert.Equal(2, ls.search(30, arr)); 
+            Assert.Equal(2, ls.search(30, arr));
             Assert.Equal(-1, ls.search(99, arr));
             Assert.Equal(4, js.search(50, arr)); 
             Assert.Equal(-1, js.search(45, arr)); 
@@ -31,3 +31,5 @@ namespace SearchAlgorithms1.Tests
         }
     }
 }
+
+//dotnet test --collect:"Code Coverage"
